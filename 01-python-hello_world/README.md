@@ -39,14 +39,16 @@ You can use commas to separate the values you want to print. The print() functio
 <p>To access an element in a specific index, you can use square brackets []with the index value inside.</p>
 <h6>Example</h6>
 <pre>
-my_list = [10, 20, 30, 40, 50]
-print(my_list[0])
-    Output: 10
+<b>my_list = [10, 20, 30, 40, 50]
+print(my_list[0])</b>
+
+<i># Output: 10</i>
 </pre>
 <pre>
-my_list = [10, 20, 30, 40, 50]
-print(my_list[2])
-    Output: 30
+<b>my_list = [10, 20, 30, 40, 50]
+print(my_list[2])</b>
+
+<i># Output: 30</i>
 </pre>
 
 <h3>Slicing</h3>
@@ -67,41 +69,38 @@ sequence [start:end:step].
 </p>
 <h5>Example</h5>
 <pre>
-string = "Hello, World!"
-por1 = string[7:12]
+<b>string = "Hello, World!"
+por1 = string[7:12]</b>
 <i># Extract "World".</i>
 </pre>
 <p>Extracts the position from index 7 to index 11 (not inclusive), yielding "World".
 </p>
 <pre>
-string = "Hello, World!"
-por2 = string[::2]
+<b>string = "Hello, World!"
+por2 = string[::2]</b>
 <i># Extract "Hlo,Wrd"</i>
 </pre>
 <p>
  Extracts the position with a step of 2, which means that it selects every second character of the string, yielding "Hlo,Wrd".</p>
 <pre>
-string = "Hello, World!"
-por3 = string[:5]
+<b>string = "Hello, World!"
+por3 = string[:5]</b>
 <i># Extract "Hello"</i>
 </pre>
 <p>
 Extracts the position from the beginning up to index 4 (not inclusive), yielding "Hello".</p>
 <pre>
-string = "Hello, World!"
-por4 = string[7:]
+<b>string = "Hello, World!"
+por4 = string[7:]</b>
 <i># Extract "World!"</i>
 </pre>
 <p>
 Extracts the position from index 7 to the end of the string, getting "World!".</p>
 <pre>
-string = "Hello, World!"
-<b>por5 = string[::-1]
+<b>string = "Hello, World!"
+por5 = string[::-1]</b>
 <i># Reverse string: "!dlroW ,olleH"</i>
 </pre>
-
-<p>
 Extracts at the position with a step of -1, which reverses the entire string, yielding "!dlroW ,olleH".
-</p>
-<h4>Author</h4>
+
 <h4><a href="https://github.com/20Emi"target="_blank">Emily Sánchez</a></h4>
