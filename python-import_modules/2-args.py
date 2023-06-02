@@ -7,6 +7,6 @@ if __name__ == "__main__":
     elif argument == 1:
         print("1 argument:")
     else:
-        print("{} arguments:".format(argument - 1))
+        print("{} arguments:".format(argument - 1)) # se hace -1 para que no cuente el 0
     for a in range(1, argument):
         print("{}: {}".format(a, sys.argv[a]))
