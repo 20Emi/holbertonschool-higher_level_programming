@@ -74,3 +74,5 @@ ZeroDivisionError: division by zero
 <h2>Arithmetic operators</h2>
 
 <p>These are special symbols used in programming to perform mathematical operations. These operators allow performing calculations such as addition, subtraction, multiplication, division and other related operations.</p>
+
+<h4><a href="https://github.com/20Emi"target="_blank">Emily Sánchez</a></h4>
