@@ -1,4 +1,4 @@
-#!/urs/bin/python3
+#!/usr/bin/python3
 def print_matrix_integer(matrix=[[]]):
     for mem1 in range(len(matrix)):
         for mem in range(len(matrix[mem1])):
