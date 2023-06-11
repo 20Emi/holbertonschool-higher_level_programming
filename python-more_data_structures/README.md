@@ -11,3 +11,36 @@
 <li>How to iterate over a dictionary</li>
 <li>What is a lambda function</li>
 <li>What are the map, reduce and filter functions</li>
+
+<h2>prototype of the functions</h2>
+<table>
+<tr>
+   <td></td>
+   <td></td>
+</tr>
+  </table>
+  <h2>Sets</h2>
+  <p>
+  A data structure that stores a collection of unique, unordered elements. It is an implementation of set theory in mathematics. Sets are defined using braces ({}) or using the set() constructor.
+
+The main characteristic of a set is that it does not allow duplicate elements. If you try to add an element that is already present in the set, it will not be added back.
+</p>
+<h4>Characteristics</h4>
+<li><b>They have no specific order:</b> The elements in a set have no defined order, which means that you cannot access them by means of an index.</li>
+
+<li><b>They support mathematical set operations:</b> Sets in Python support operations such as union, intersection, difference, and symmetric difference, which can be used to combine or compare sets</li>
+
+<li><b>They are mutable: </b>You can add or remove elements of a set after you have created it.</li>
+
+<li><b>They can only contain immutable elements:</b> Elements within a set must be immutable, such as strings, numbers or tuples. You cannot have sets, lists or other sets within a set.</li>
+
+<h5>Example</h5>
+
+<li>Add elements to a set:</li>
+<pre>
+set.add(element)
+</pre>
+o
+<pre>
+set.update([element1, element2, element3])
+</pre>
