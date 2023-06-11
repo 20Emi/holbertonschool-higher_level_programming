@@ -25,45 +25,45 @@
   </tr>
   <tr>
 
-   <td></td>
+  <td>0-safe_print_list.py </td>
 
-   <td></td>
-
-</tr><tr>
-
-   <td></td>
-
-   <td></td>
+   <td>def safe_print_division(a, b):</td>
 
 </tr><tr>
 
-   <td></td>
+   <td>1-safe_print_integer.py</td>
 
-   <td></td>
-
-</tr><tr>
-
-   <td></td>
-
-   <td></td>
+   <td>def safe_print_integer(value)</td>
 
 </tr><tr>
 
-   <td></td>
+   <td>2-safe_print_list_integers.py</td>
 
-   <td></td>
-
-</tr><tr>
-
-   <td></td>
-
-   <td></td>
+   <td>def safe_print_list_integers(my_list=[], x=0):</td>
 
 </tr><tr>
 
-   <td></td>
+   <td>3-safe_print_division.py</td>
 
-   <td></td>
+   <td>def safe_print_division(a, b):</td>
+
+</tr><tr>
+
+   <td>4-list_division.py</td>
+
+   <td>def list_division(my_list_1, my_list_2, list_length):</td>
+
+</tr><tr>
+
+   <td>5-raise_exception.py</td>
+
+   <td>def raise_exception():</td>
+
+</tr><tr>
+
+   <td>6-raise_exception_msg.py</td>
+
+   <td>def raise_exception_msg(message=""):</td>
 
 </tr>
 </table>
