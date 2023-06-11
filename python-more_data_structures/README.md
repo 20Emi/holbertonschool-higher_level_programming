@@ -71,13 +71,12 @@ Dictionaries are useful when you need to store and access data efficiently throu
 <i># Create an empty dictionary</i>
 dictionary = {}
 
-
 <i># Add items to the dictionary</i>
 dictionary["key1"] = "value1".
 dictionary["key2"] = "value2"
 
 <i># Access a value by its key</i>
-print(dictionary["key1"]) <i># Print "value1" # Print "value2" # Modify an existing value</i>
+print(dictionary["key1"]) <i># Print "value1" # Print "value2"</i>
 
 <i># Modify an existing value</i>
 dictionary["key2"] = "new_value"
@@ -98,3 +97,55 @@ values = dictionary.values()
 <i># Get the list of key-value pairs as tuples</i>
 items = dictionary.items()
 </pre>
+
+<h2>Lambda</h2>
+A keyword used to create anonymous functions or single-expression functions. A lambda function is a small, anonymous function that can take any number of arguments, but can only have one expression.
+
+<h4>Sintaxis</h4>
+<pre>
+<b>lambda</b> arguments: expression
+</pre>
+
+<h5>Example</h5>
+<pre>
+sum = <b>lambda</b> x, y: x + y
+result = sum(3, 5)
+print(result)  
+
+<i>#Output: 8</i>
+</pre>
+
+<h2>Map</h2>
+
+It is a higher-order function that takes a function and one or more sequences as arguments. It then applies the function to each element of the sequences and returns an iterable containing the results.
+
+<h4>Sintaxis</h4>
+<pre>
+<b>map</b>(function, sequence1, sequence2, ...)
+</pre>
+
+<h5>Example</h5>
+<pre>
+numbers = [1, 2, 3, 3, 4, 5].
+squares = list(map(lambda x: x ** 2, numbers))
+print(squares)
+
+<i># Output: [1, 4, 9, 9, 16, 25].</i>
+</pre>
+
+<h2>Filter</h2>
+A higher-order function that takes a function and a sequence as arguments. The <b>filter()</b> function applies the function to each element of the sequence and returns an iterable containing only the elements for which the function returns <b>True.</b>
+
+<h4>Sintaxis</h4>
+<pre>
+filter(function, sequence)
+</pre>
+
+<h5>Example</h5>
+<pre>
+numbers = [1, 2, 3, 3, 4, 5]
+pairs = list(filter(lambda x: x % 2 == 0, numbers))
+print(pairs) 
+# Output: [2, 4]
+</pre>
+
