@@ -1,5 +1,7 @@
-<h1 align = "center"> python-more_data_structures</h1>
+<h1 align = "center"> Python-more_data_structures</h1>
+
 <h2>Project objectives</h2>
+
 <li>Why Python programming is awesome</li>
 <li>What are sets and how to use them</li>
 <li>What are the most common methods of set and how to use them</li>
@@ -14,74 +16,76 @@
 
 <h2>prototype of the functions</h2>
 <table>
+   <tr>
+
+   <td align = "center"><b>File</b></td>
+
+   <td align = "center"><b>Prototype</b></td>
+
+</tr>
 <tr>
-   <td></td>
-   <td></td>
+   <td>0-square_matrix_simple.py</td>
+   <td>def square_matrix_simple(matrix=[]):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>1-search_replace.py</td>
+   <td>def search_replace(my_list, search, replace):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>2-uniq_add.py</td>
+   <td>def uniq_add(my_list=[]):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>3-common_elements.py</td>
+   <td>def common_elements(set_1, set_2):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>4-only_diff_elements.py</td>
+   <td>def only_diff_elements(set_1, set_2):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>5-number_keys.py</td>
+   <td>def number_keys(a_dictionary):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>6-print_sorted_dictionary.py</td>
+   <td>def print_sorted_dictionary(a_dictionary):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>7-update_dictionary.py</td>
+   <td>def update_dictionary(a_dictionary, key, value):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>8-simple_delete.py</td>
+   <td>def simple_delete(a_dictionary, key=""):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>9-multiply_by_2.py</td>
+   <td>def multiply_by_2(a_dictionary):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>10-best_score.py</td>
+   <td>def best_score(a_dictionary):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
+   <td>11-multiply_list_map.py</td>
+   <td>def multiply_list_map(my_list=[], number=0):</td>
 </tr>
    
    <tr>
-   <td></td>
-   <td></td>
-</tr>
-   
-   <tr>
-   <td></td>
-   <td></td>
+   <td>12-roman_to_int.py</td>
+   <td>def roman_to_int(roman_string):</td>
 </tr>
   </table>
   <h2>Sets</h2>
