@@ -58,3 +58,43 @@ element = set.pop()
 </pre>
 <b>pop()</b> will remove and return a random element from the set.
 
+<h2>Dictionaries</h2>
+
+It is a data structure that stores pairs of elements, where each pair consists of a key and an associated value.
+
+Dictionaries are indexed by unique keys. Keys can be of any immutable type, such as strings, numbers, or tuples. Values can be of any object type.
+
+Dictionaries are useful when you need to store and access data efficiently through a key. You can add, modify and delete items in a dictionary, and you can also look up values associated with a specific key.
+
+<h5>Example</h5>
+<pre>
+<i># Create an empty dictionary</i>
+dictionary = {}
+
+
+<i># Add items to the dictionary</i>
+dictionary["key1"] = "value1".
+dictionary["key2"] = "value2"
+
+<i># Access a value by its key</i>
+print(dictionary["key1"]) <i># Print "value1" # Print "value2" # Modify an existing value</i>
+
+<i># Modify an existing value</i>
+dictionary["key2"] = "new_value"
+
+<i># Delete a dictionary element</i>
+from dictionary["key1"]
+
+<i># Check if a key exists in the dictionary</i>
+if "key1" in dictionary:
+    print("Key exists")
+
+<i># Get the list of all the keys in the dictionary</i>
+keys = dictionary.keys()
+
+<i># Get the list of all the values in the dictionary</i>
+values = dictionary.values()
+
+<i># Get the list of key-value pairs as tuples</i>
+items = dictionary.items()
+</pre>
