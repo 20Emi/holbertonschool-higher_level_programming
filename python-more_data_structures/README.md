@@ -44,3 +44,17 @@ o
 <pre>
 set.update([element1, element2, element3])
 </pre>
+<li>Remove elements from a set:</li>
+<pre>
+set.remove(element)
+</pre>
+<b>remove()</b> will throw an error if the element does not exist in the set.
+<pre>
+set.discard(element)
+</pre>
+<b>discard()</b> will remove the element if it exists in the set, but will not throw an error if the element does not exist.
+<pre>
+element = set.pop()
+</pre>
+<b>pop()</b> will remove and return a random element from the set.
+
