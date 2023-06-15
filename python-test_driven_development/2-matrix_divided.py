@@ -5,9 +5,9 @@
 def matrix_divided(matrix, div):
     """divide a matrix"""
 
+    new_matrix = matrix.copy()
     contx = "matrix must be a matrix (list of lists) of integers/floats"
-    for fila in range(len(matrix)):
-        new_matrix = matrix.copy()
+    for fila in range(len(new_matrix)):
         aux = len(new_matrix[0])
         if aux != len(new_matrix[fila]):
             raise TypeError("Each row of the matrix must have the same size")
@@ -20,5 +20,6 @@ def matrix_divided(matrix, div):
                 raise TypeError(contx)
             if not isinstance(new_matrix[fila][colonna], (int, float)):
                 raise TypeError(contx)
-            new_matrix[fila] = list(map(lambda x: round((x / div), 2), matrix[fila]))
+            new_matrix[fila] = list(map(lambda x: round((x / div), 2),
+                                        matrix[fila]))
     return new_matrix
