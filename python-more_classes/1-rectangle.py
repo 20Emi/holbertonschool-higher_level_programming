@@ -2,7 +2,7 @@
 """Task 0"""
 
 
-class Rectangle:
+class Rectangle():
     "create a class"
 
     def __init__(self, width=0, height=0):
