@@ -57,7 +57,7 @@ class Rectangle():
 
         rect = ""
         if self.__height == 0 or self.__width == 0:
-            return  ("")
+            return ""
         for side in range(self.__height):
             rect = rect + ("#" * self.__width + '\n')
         return rect[:-1]
