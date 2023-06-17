@@ -28,14 +28,18 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if not type(value, tuple) and len(value) != 2:
+        if not isinstance(value, tuple):
             raise TypeError("position must be a tuple of 2 positive integers")
-        if not isinstance(value[0], int) and not isinstance(value[1], int):
+        if not len(value) != 2:
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[0], int):
+            raise TypeError("position must be a tuple of 2 positive integers")
+        if not isinstance(value[1], int):
             raise TypeError("position must be a tuple of 2 positive integers")
         if value[0] < 0 or value[1] < 0:
             raise TypeError("position must be a tuple of 2 positive integers")
-        else:
-            self.__position = value
+
+        self.__position = value
 
     def area(self):
         """Public instance method:"""
@@ -43,13 +47,14 @@ class Square:
 
     def my_print(self):
 
-        if self.__size == 0:
+        if self.size == 0:
             print()
-        for s in range(self.__position[1]):
-            print()
-        for a in range(self.__size):
-            for d in range(self.__position[0]):
-                print(" ", end="")
-            for j in range(self.__size):
-                print("#", end="")
-            print()
+        else:
+            for s in range(self.position[1]):
+                print()
+            for s in range(self.size):
+                for d in range(self.position[0]):
+                    print(" ", end="")
+                for j in range(self.size):
+                    print("#", end="")
+                print()
