@@ -30,4 +30,3 @@ def matrix_divided(matrix, div):
             new.append(round(colonna/div, 2))
         new_matr.append(new)
     return new_matr
-
