@@ -28,7 +28,7 @@ class Square:
 
     @position.setter
     def position(self, value):
-        if not isinstance(value, tuple):
+        if type(value) != tuple:
             raise TypeError("position must be a tuple of 2 positive integers")
         if not len(value) != 2:
             raise TypeError("position must be a tuple of 2 positive integers")
@@ -47,14 +47,14 @@ class Square:
 
     def my_print(self):
 
-        if self.size == 0:
+        if self.__size == 0:
             print()
         else:
             for s in range(self.position[1]):
                 print()
-            for a in range(self.size):
+            for a in range(self.__size):
                 for d in range(self.position[0]):
                     print(" ", end="")
-                for j in range(self.size):
+                for j in range(self.__size):
                     print("#", end="")
                 print()
