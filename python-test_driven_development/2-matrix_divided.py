@@ -6,8 +6,6 @@
 def matrix_divided(matrix, div):
     """divide a matrix"""
 
-    new_matr = []
-
     contx = "matrix must be a matrix (list of lists) of integers/floats"
 
     if type(matrix) is not list or len(matrix) == 0 or len(matrix[0]) == 0:
@@ -17,7 +15,9 @@ def matrix_divided(matrix, div):
     if not isinstance(div, (int, float)):
         raise TypeError("div must be a number")
 
+    new_matr = []
     den = len(matrix[0])
+
     for fila in matrix:
         new = []
         if type(fila) is not list:
