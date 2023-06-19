@@ -84,16 +84,10 @@ To define a public attribute, simply declare it without any leading underscores.
 <h5>Example</h5>
 <pre>
 class MyClass:
-
-    def __init__(self):
-
+   <b>def __init__(self):</b>
         self.public_attribute = 10
-
-    def public_method(self):
-
-        # Code goes here
-
-        pass
+    <b>def public_method(self):</b>
+        <i># Code goes here</i>
 </pre>
  
  <h3>Protected</h3>
@@ -102,15 +96,10 @@ class MyClass:
 <h5>Example</h5>
 <pre>
  class MyClass:
-
-    def __init__(self):
-
+    <b>def __init__(self):</b>
         self._protected_attribute = 20
-
-    def _protected_method(self):
-
-        # Code goes here
-        pass
+    <b>def _protected_method(self):</b>
+        <i># Code goes here</i>
 </pre>
 
 <h3>Private</h3>
@@ -120,16 +109,53 @@ The names of private members are mangled to include the class name, which makes 
 <h5>Exmple</h5>
 <pre>
 class MyClass:
-
-    def __init__(self):
-
+    <b>def __init__(self):</b>
         self.__private_attribute = 30
-
-    def __private_method(self):
-
-        # Code goes here
-
-        pass
-
-
+    <b>def __private_method(self):</b>
+        <i># Code goes here</i>
 </pre>
+<h2>Property</h2>
+<p>This is used to create special methods known as 'properties' in a class. These behave like attributes but are actually methods that are called automatically when accessed.</p>
+
+<h3>Getter</h3>
+
+<p>Method used to get the value of an attribute. this only has read access to the attribute, which means that you cannot directly modify its value.</p>
+
+<h3>Setter</h3>
+
+<p>This modifies the value of an attribute, this provides write access to the attribute, which allows to change its value.</p>
+
+<h5>Example</h5>
+<pre>
+ class Rectangle:
+    <b>def __init__(self, width, height):</b>
+        self._width = width
+        self._height = height
+    @property
+    <b>def area(self):</b>
+        return self._width * self._height.
+    @property
+    <b>def width(self):</b>
+        return self._width
+    @width.setter
+    <b>def width(self, new_width):</b>
+        if new_width > 0:
+            self._width = new_width.
+
+<i># Create an instance of Rectangle</i>
+rectangle = Rectangle(5, 3)
+
+<i># Access the area property (getter)</i>
+print(rectangulo.area) # Output: 15
+
+<i># Access the width property (getter)</i>
+print(rectangle.width) # Output: 5
+
+<i># Modify the width property using the setter</i>
+rectangle.width = 7
+
+<i># Access the width property again to verify the change</i>
+print(rectangulo.ancho) # Output: 7
+</pre>
+
+<h4><a href="https://github.com/20Emi"target="_blank">Emily Sánchez</a></h4>
