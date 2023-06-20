@@ -48,7 +48,7 @@ TypeError:  must be an integer
 Traceback (most recent call last):
 Exception: area() is not implemented
 
->>> bg.integer_validator("emi", [1, 2, 3])
+>>> bg.integer_validator("emi", (1, 2, 3))
 Traceback (most recent call last):
 TypeError: emi must be an integer
 
@@ -83,3 +83,11 @@ TypeError: integer_validator() takes 3 positional arguments but 4 were given
 >>> bg.integer_validator("e", "2")
 Traceback (most recent call last):
 TypeError: e must be an integer
+
+>>> bg.integer_validator("e", )
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
+
+>>> bg.integer_validator(, 1)
+Traceback (most recent call last):
+SyntaxError: invalid syntax
