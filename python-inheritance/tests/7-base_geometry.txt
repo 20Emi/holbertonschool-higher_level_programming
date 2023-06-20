@@ -71,3 +71,15 @@ TypeError: emily must be an integer
 >>> bg.integer_validator("emily", [1, 2, 3])
 Traceback (most recent call last):
 TypeError: emily must be an integer
+
+>>> bg.integer_validator("e", True)
+Traceback (most recent call last):
+TypeError: e must be an integer
+
+>>> bg.integer_validator("e", 1, 1)
+Traceback (most recent call last):
+TypeError: integer_validator() takes 3 positional arguments but 4 were given
+
+>>> bg.integer_validator("e", "2")
+Traceback (most recent call last):
+TypeError: e must be an integer
