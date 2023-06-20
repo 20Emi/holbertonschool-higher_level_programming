@@ -103,3 +103,7 @@ TypeError: emily must be an integer
 >>> bg.area(2)
 Traceback (most recent call last):
 TypeError: area() takes 1 positional argument but 2 were given
+
+>>> bg.integer_validator("emi", None)
+Traceback (most recent call last):
+TypeError: emi must be an integer
