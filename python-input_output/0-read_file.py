@@ -7,4 +7,4 @@ def read_file(filename=""):
 
     with open(filename, encoding="utf-8") as archivio:
         read_data = archivio.read()
-        print(read_data)
+        print(read_data, end='')
