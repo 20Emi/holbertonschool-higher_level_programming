@@ -3,14 +3,22 @@
 
 
 def pascal_triangle(n):
-    """coment"""
+    """Create a function def pascal_triangle(n):
+    that returns a list of lists of integers representing the Pascal’s
+    triangle of n:
+    *Returns an empty list if n <= 0
+    *You can assume n will be always an integer"""
 
-    lista = []
+    lis = []
+    if n <= 0:
+        return []
 
     for a in range(n):
-        lista.append([1])
-        for s in range([a]):
-            if a == s - 1:
-                lista[a].append(1)
+        fila = [1]
+        for s in range(a):
+            if s == a - 1:
+                fila.append(1)
             else:
-                lista[a].append(lista[a - 1][s + 1] + lista[a-1][s])
+                fila.append(lis[a - 1][s + 1] + lis[a - 1][s])
+        lis.append(fila)
+    return lis
