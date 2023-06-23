@@ -16,4 +16,4 @@ def pascal_triangle(n):
             if a == s - 1:
                 lista[a].append(1)
             else:
-                lista[s].append(lista[a - 1][s + 1] + lista[a-1][s])
+                lista[a].append(lista[a - 1][s + 1] + lista[a-1][s])
