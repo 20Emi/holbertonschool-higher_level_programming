@@ -5,9 +5,6 @@
 def pascal_triangle(n):
     """coment"""
 
-    if n <= 0:
-        return
-
     lista = []
 
     for a in range(n):
