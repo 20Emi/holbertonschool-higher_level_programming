@@ -72,3 +72,9 @@ class Rectangle(Base):
             for two in range(self.width):
                 print("#", end="")
             print()
+
+    def __str__(self):
+        """Update the class Rectangle by overriding the __str__
+        method so that it returns"""
+        coment = "[Rectangle] ({}) {}/{} - {}/{}"
+        return coment.format(self.id, self.x, self.y, self.width, self.height)
