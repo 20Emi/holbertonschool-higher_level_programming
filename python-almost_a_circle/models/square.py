@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 """Tasks"""
-
 from models.rectangle import Rectangle
 
 
