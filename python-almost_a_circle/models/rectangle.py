@@ -68,7 +68,11 @@ class Rectangle(Base):
 
     def display(self):
         """that prints in stdout the Rectangle instance with the character #"""
+        for jump in range(self.__y):
+            print()
         for one in range(self.height):
+            for space in range(self.__x):
+                print(" ", end="")
             for two in range(self.width):
                 print("#", end="")
             print()
