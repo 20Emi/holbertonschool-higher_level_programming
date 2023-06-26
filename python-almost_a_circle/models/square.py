@@ -24,9 +24,9 @@ class Square(Rectangle):
         self.height = value
 
     def update(self, *args, **kwargs):
-        """task"""
+        """python3 -c 'print(__import__("my_module").MyClass.__doc__)'"""
 
-        if args:
+        if args and len(args) != 0:
             if len(args) > 0:
                 self.id = args[0]
             if len(args) > 1:
