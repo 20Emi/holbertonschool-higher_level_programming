@@ -22,3 +22,14 @@ class Base:
         if list_dictionaries is None or len(list_dictionaries) == []:
             return "[]"
         return json.dumps(list_dictionaries)
+
+    @classmethod
+    def save_to_file(cls, list_objs):
+        """"""
+        if list_objs is None:
+            with open(cls.__name__ + ".json", "w") as archivio:
+                archivio.write(cls.to_json_string(None))
+            return
+        jsk = []
+        for mn in list_objs:
+            jsk.append(mn.)
