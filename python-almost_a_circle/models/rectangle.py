@@ -67,7 +67,7 @@ class Rectangle(Base):
         return self.__height * self.__width
 
     def display(self):
-        """ that prints in stdout the Rectangle instance with the character #"""
+        """that prints in stdout the Rectangle instance with the character #"""
         for one in range(self.height):
             for two in range(self.width):
                 print("#", end="")
