@@ -45,3 +45,15 @@ class Base:
             return []
         else:
             return json.loads(json_string)
+
+    @classmethod
+    def create(cls, **dictionary):
+        """returns an instance with all attributes already set"""
+
+        if cls.__name__ == "Square":
+            manichino = cls(25)  # cls(25) -> per square
+        else:
+            manichino = cls(25, 25)  # clase(25, 25) -> per Rectangle
+        manichino.update(**dictionary)
+
+        return manichino
