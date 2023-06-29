@@ -51,9 +51,11 @@ class Base:
         """returns an instance with all attributes already set"""
 
         if cls.__name__ == "Square":
-            manichino = cls(25)  # cls(25) -> per square
+            manichino = cls(25)  # cls(25) -> per square -- side
+
         else:
-            manichino = cls(25, 25)  # clase(25, 25) -> per Rectangle
+            manichino = cls(25, 25)
+            # clase(25, 25)-> per Rectangle - side x width
         manichino.update(**dictionary)
 
         return manichino
