@@ -25,11 +25,13 @@ class Base:
 
     @classmethod
     def save_to_file(cls, list_objs):
-        """"""
-        if list_objs is None:
-            with open(cls.__name__ + ".json", "w") as archivio:
-                archivio.write(cls.to_json_string(None))
-            return
+
         jsk = []
-        for mn in list_objs:
-            jsk.append(mn.)
+        with open(cls.__name__ + ".json", "w") as archivio:
+            archivio.write(cls.to_json_string(jsk))
+
+            if list_objs is None:
+                archivio.write("[]")
+
+            for file in list_objs:
+                jsk.append(file.to_dictionary())
