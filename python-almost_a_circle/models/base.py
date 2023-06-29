@@ -59,3 +59,16 @@ class Base:
         manichino.update(**dictionary)
 
         return manichino
+
+    @classmethod
+    def load_from_file(cls):
+        filee = []
+        try:
+            with open(cls.__name__ + ".json", "r") as archivio:
+                archi = archivio.read()
+        except:
+            return []
+        lin = cls.from_json_string(archi)
+        for a in range(len(lin)):
+            filee.append(cls.create(**lin[a]))
+        return filee
