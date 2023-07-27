@@ -14,7 +14,8 @@ if __name__ == "__main__":
     cursor = conex.cursor()
 
     # ejecucion
-    cursor.execute("SELECT * FROM states ORDER BY id ASC")
+    sql_query = "SELECT * FROM states ORDER BY id"
+    cursor.execute(sql_query)
 
     for row in cursor.fetchall():
         if row[1] == sys.argv[4]:
