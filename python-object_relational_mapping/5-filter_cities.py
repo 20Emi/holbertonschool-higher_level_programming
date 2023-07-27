@@ -22,7 +22,7 @@ if __name__ == "__main__":
 
     flag = False
     for row in cursor.fetchall():
-        if flag == True:
+        if flag is True:
             print(', ', end='')
         else:
             flag = True
