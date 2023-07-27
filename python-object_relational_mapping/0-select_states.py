@@ -1,7 +1,8 @@
 #!/usr/bin/python3
-
+"""task 0"""
 import sys  # para los argumentos
 import MySQLdb
+
 
 if __name__ == "__main__":
     # conexion con la base de datos
