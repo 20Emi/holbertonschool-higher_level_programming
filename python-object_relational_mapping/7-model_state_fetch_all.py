@@ -18,4 +18,4 @@ if __name__ == "__main__":
     la = sqlalchemy.select(State.id, State.name).order_by(State.id)
     ls = conexion.execute(la).fetchall()
     for a in ls:
-        print("{}:{}".format(a[0], a[1]))
+        print("{}: {}".format(a[0], a[1]))
